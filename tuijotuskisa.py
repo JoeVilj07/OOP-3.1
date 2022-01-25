@@ -69,7 +69,7 @@ class Sankari:
     def arvo_hurraus(self):
         SANAT = ("yyh", "kjehkhojh", "mkdmsk", "mdkd", "khhkhh")
         huuto = random.choice(SANAT)
-        return self.arvo_hurraus(huuto)
+        return huuto
          
 
 def hurraa(olio):
