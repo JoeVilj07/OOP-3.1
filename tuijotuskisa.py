@@ -68,7 +68,7 @@ class Sankari:
 
     def arvo_hurraus(self):
         SANAT = ["yyh", "kjehkhojh", "mkdmsk", "mdkd", "khhkhh"]
-        self.hurraus = random.choice(SANAT)
+        self.hurraus = random.choices(SANAT)
 
 def hurraa(olio):
     """Tulostaa satunnaisen hurrauksen annetulle oliolle.
