@@ -58,6 +58,9 @@ class Peikko:
 
 
 class Sankari:
+    
+    TAVUT = ("yyh", "kjehkhojh", "potatbx", "maito", "khhkhh")
+    
     def __init__(self, nimi, rohkeus=random.randint(7, 42), katseen_voima=random.randint(22, 42)):
         self.nimi = nimi
         self.rohkeus = rohkeus
