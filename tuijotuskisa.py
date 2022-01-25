@@ -59,15 +59,16 @@ class Peikko:
 
 class Sankari:
     
-    SANAT = ["yyh", "kjehkhojh", "potatbx", "maito", "khhkhh"]
-    
     def __init__(self, nimi, rohkeus=random.randint(7, 42), katseen_voima=random.randint(22, 42)):
         self.nimi = nimi
         self.rohkeus = rohkeus
         self.katseen_voima= katseen_voima
 
     def arvo_hurraus(self):
-        pass
+        SANAT = ["yyh", "kjehkhojh", "mkdmsk", "mdkd", "khhkhh"]
+        hurraus = ""
+        for i in range(random.randint(2,7)):
+            hurraus += random.choice(SANAT)
 
 def hurraa(olio):
     """Tulostaa satunnaisen hurrauksen annetulle oliolle.
