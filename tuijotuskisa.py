@@ -66,8 +66,8 @@ class Sankari:
         self.rohkeus = rohkeus
         self.katseen_voima= katseen_voima
 
-    def arvo_hurraus():
-        
+    def arvo_hurraus(self):
+        pass
 
 def hurraa(olio):
     """Tulostaa satunnaisen hurrauksen annetulle oliolle.
