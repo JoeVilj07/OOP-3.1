@@ -67,8 +67,10 @@ class Sankari:
         self.katseen_voima= katseen_voima
 
     def arvo_hurraus(self):
-        SANAT = ["yyh", "kjehkhojh", "mkdmsk", "mdkd", "khhkhh"]
-        self.hurraus = random.choices(SANAT)
+        SANAT = ("yyh", "kjehkhojh", "mkdmsk", "mdkd", "khhkhh")
+        huuto = random.choice(SANAT)
+        return self.arvo_hurraus(huuto)
+         
 
 def hurraa(olio):
     """Tulostaa satunnaisen hurrauksen annetulle oliolle.
