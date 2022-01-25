@@ -61,7 +61,7 @@ class Sankari:
     
 
 
-    def __init__(self, nimi, rohkeus=random.randint(7, 42), katseen_voima=random.randint(22, 42)):
+    def __init__(self, nimi, rohkeus=random.randint(2, 10), katseen_voima=random.randint(22, 42)):
         self.nimi = nimi
         self.rohkeus = rohkeus
         self.katseen_voima= katseen_voima
