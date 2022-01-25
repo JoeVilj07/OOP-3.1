@@ -57,7 +57,9 @@ class Peikko:
         return self._arvo_sanat(self.RIEMUTAVUT, 8, " ", 0.7)
 
 
-### Kirjoita luokka Sankari tähän.
+class Sankari:
+    def nimi(self, nimi, rohkeus, katseen_voima):
+        self.nimi = nimi
 
 
 def hurraa(olio):
