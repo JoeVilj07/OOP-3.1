@@ -58,15 +58,25 @@ class Peikko:
 
 
 class Sankari:
-    
 
 
-    def __init__(self, nimi, rohkeus=random.randint(2, 10), katseen_voima=random.randint(22, 42)):
+    def __init__(self, nimi, rohkeus, katseen_voima):
+        """konstruktori
+
+        :param nimi: Olion nimi joka sille syötetään
+        :param rohkeus: rohkeus arvo, joka arvotaan väliltä 2-10
+        :param katseen_voima: katseen voima, joka arvotaan väliltä 22-42
+        """
         self.nimi = nimi
-        self.rohkeus = rohkeus
-        self.katseen_voima= katseen_voima
+        self.rohkeus = random.randint(2, 10)
+        self.katseen_voima = random.randint(22, 42)
 
     def arvo_hurraus(self):
+        """palauttaa SANAT listasta yhden satunnaisesti valittuna
+
+        :return: ääntelyä
+        :rtype: str
+        """
         SANAT = ("yyh", "kjehkhojh", "mkdmsk", "mdkd", "khhkhh")
         huuto = random.choice(SANAT)
         return huuto
